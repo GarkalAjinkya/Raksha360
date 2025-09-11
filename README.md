@@ -25,28 +25,33 @@ This project follows a **feature-branch development strategy** with separate bra
 - **`main`** - Main/production branch with project documentation and overall coordination
 - **`origin/ai-ml`** - AI/ML server development branch
   - Contains machine learning models, threat detection algorithms, and AI services
-- **`origin/back-end`** - Backend API development branch  
+- **`origin/back-end`** - Backend API development branch
   - Contains Express.js + TypeScript server, database models, and API endpoints
 - **`origin/front-end`** - Frontend/Mobile app development branch
   - Contains Expo React Native application and mobile UI components
 
 **Development Workflow:**
+
 1. Each team works on their respective feature branch
 2. Regular integration testing between components
 3. Merge to `main` branch for releases
 
 ### 🧠 ai-ml-server/
+
 Contains the artificial intelligence and machine learning components of the platform:
+
 - **Purpose**: Handles AI-powered features like threat detection, risk assessment, and predictive analytics
-- **Technologies**: Likely to include Python-based ML frameworks 
-- **Features**: 
+- **Technologies**: Likely to include Python-based ML frameworks
+- **Features**:
   - Real-time danger detection algorithms
   - Location-based risk assessment
   - Pattern recognition for suspicious activities
   - Emergency response optimization
 
 ### 🔧 backend-api/
+
 Houses the main backend API and server-side business logic:
+
 - **Purpose**: Manages data, user authentication, emergency services integration, and communication
 - **Technologies**: Express.js with TypeScript, RESTful APIs, database management, authentication services
 - **Features**:
@@ -57,7 +62,9 @@ Houses the main backend API and server-side business logic:
   - Real-time communication and alerts
 
 ### 📱 mobile-app/
+
 Contains the mobile application that end-users interact with:
+
 - **Purpose**: Provides the user interface for all safety features and emergency functions
 - **Technologies**: Expo (React Native framework)
 - **Features**:
@@ -70,25 +77,28 @@ Contains the mobile application that end-users interact with:
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js and npm/yarn
+
+- Node.js and npm
 - Expo CLI (for mobile app development)
 - Python 3.8+ (for AI/ML server)
 - TypeScript
-- Database system (PostgreSQL/MongoDB)
+- Database system (MongoDB)
 
 ### Installation
+
 1. Clone the repository:
+
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/GarkalAjinkya/Raksha360
    cd Raksha360
    ```
-
 2. **Environment Setup:**
+
    - Copy `.env.example` to `.env` in each component directory
    - Configure your environment variables (see Environment Variables section below)
    - Ensure `.gitignore` files are properly configured to exclude sensitive files
-
 3. Set up each component:
+
    ```bash
    # Backend API
    cd backend-api
@@ -132,6 +142,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Support & Contact
 
 For questions, suggestions, or support, please reach out through:
+
 - Create an issue in this repository
 - Contact the development team
 
