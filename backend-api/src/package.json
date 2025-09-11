@@ -1,0 +1,13 @@
+{
+  "name": "raksha360-backend",
+  "version": "1.0.0",
+  "description": "Raksha 360 - A Women safety",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "raksha360",
+  "license": "ISC"
+}
