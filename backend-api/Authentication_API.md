@@ -17,7 +17,7 @@ The authentication flow is handled by two primary endpoints defined in `src/rout
 
 ### 2.1. Sending an OTP
 
-**Endpoint**: `POST /api/auth/send-otp`
+**Endpoint**: `POST /api/v1/auth/send-otp`
 
 This endpoint initiates the login/verification process. A user provides their phone number, and the system sends an OTP to it.
 
@@ -55,7 +55,7 @@ This endpoint initiates the login/verification process. A user provides their ph
 
 ### 2.2. Verifying an OTP
 
-**Endpoint**: `POST /api/auth/verify-otp`
+**Endpoint**: `POST /api/v1/auth/verify-otp`
 
 This endpoint is used to verify the OTP that the user received and, upon success, issue an authentication token.
 
@@ -97,7 +97,7 @@ This endpoint is used to verify the OTP that the user received and, upon success
 The client can then store this token and include it in the `Authorization` header (e.g., `Authorization: Bearer <token>`) for all subsequent requests to protected routes.
 
 ### User Authentication
-1. **Register**: `POST /api/auth/register`
+1. **Register**: `POST /api/v1/auth/register`
    - Request: 
      ```json
      { 
@@ -120,7 +120,7 @@ The client can then store this token and include it in the `Authorization` heade
      }
      ```
 
-2. **Login**: `POST /api/auth/login`
+2. **Login**: `POST /api/v1/auth/login`
    - Request: `{ "email": "user@example.com", "password": "securePassword" }`
    - Response: 
      ```json
