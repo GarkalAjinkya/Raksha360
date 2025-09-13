@@ -1,6 +1,6 @@
-# OTP Verification Workflow Documentation
+## 🔐 Authentication API
 
-This document outlines the complete workflow for the One-Time Password (OTP) based authentication system in the `backend-api`.
+This document outlines the complete workflow for the authentication system in the `backend-api`.
 
 ## 1. Overview
 
@@ -93,4 +93,40 @@ This endpoint is used to verify the OTP that the user received and, upon success
 }
 ```
 
+
 The client can then store this token and include it in the `Authorization` header (e.g., `Authorization: Bearer <token>`) for all subsequent requests to protected routes.
+
+### User Authentication
+1. **Register**: `POST /api/auth/register`
+   - Request: 
+     ```json
+     { 
+       "name": "User Name", 
+       "email": "user@example.com", 
+       "phone": "+919876543210", 
+       "password": "securePassword", 
+       "verificationToken": "jwt-token",
+       "emergencyContacts": [
+         { "name": "Contact Name", "phone": "+919876543211", "relation": "Family" }
+       ]
+     }
+     ```
+   - Response: 
+     ```json
+     { 
+       "success": true, 
+       "user": { "id": "userId", "name": "User Name", "email": "user@example.com" },
+       "tokens": { "accessToken": "jwt-token", "refreshToken": "jwt-token", "expiresIn": 3600 }
+     }
+     ```
+
+2. **Login**: `POST /api/auth/login`
+   - Request: `{ "email": "user@example.com", "password": "securePassword" }`
+   - Response: 
+     ```json
+     { 
+       "success": true, 
+       "user": { "id": "userId", "name": "User Name", "email": "user@example.com" },
+       "tokens": { "accessToken": "jwt-token", "refreshToken": "jwt-token", "expiresIn": 3600 }
+     }
+     ```

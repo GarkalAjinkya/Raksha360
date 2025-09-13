@@ -9,6 +9,8 @@ const env = {
   MONGODB_URI: process.env.MONGODB_URI as string,
   JWT_SECRET: process.env.JWT_SECRET as string,
   JWT_EXPIRY: process.env.JWT_EXPIRY || '15m',
+  ACCESS_TOKEN_TTL: process.env.ACCESS_TOKEN_TTL || '1h',
+  REFRESH_TOKEN_TTL: process.env.REFRESH_TOKEN_TTL || '7d',
   BCRYPT_SALT_ROUNDS: Number(process.env.BCRYPT_SALT_ROUNDS) || 10,
   MSG91_API_KEY: process.env.MSG91_API_KEY,
   CORS_ORIGIN: process.env.CORS_ORIGIN || '*'

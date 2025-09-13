@@ -8,6 +8,7 @@ Raksha360 is a cutting-edge women's safety application designed to provide prote
 
 This project aims to create a complete ecosystem for women's safety, combining mobile technology, artificial intelligence, and robust backend services to deliver real-time protection and emergency response capabilities.
 
+
 ## 📁 Project Structure
 
 ```
@@ -17,63 +18,6 @@ Raksha360/
 ├── backend-api/             # Core API and business logic
 └── mobile-app/              # Mobile application frontend
 ```
-
-### 🌿 Branch Organization
-
-This project follows a **feature-branch development strategy** with separate branches for each major component:
-
-- **`main`** - Main/production branch with project documentation and overall coordination
-- **`origin/ai-ml`** - AI/ML server development branch
-  - Contains machine learning models, threat detection algorithms, and AI services
-- **`origin/back-end`** - Backend API development branch
-  - Contains Express.js + TypeScript server, database models, and API endpoints
-- **`origin/front-end`** - Frontend/Mobile app development branch
-  - Contains Expo React Native application and mobile UI components
-
-**Development Workflow:**
-
-1. Each team works on their respective feature branch
-2. Regular integration testing between components
-3. Merge to `main` branch for releases
-
-### 🧠 ai-ml-server/
-
-Contains the artificial intelligence and machine learning components of the platform:
-
-- **Purpose**: Handles AI-powered features like threat detection, risk assessment, and predictive analytics
-- **Technologies**: Likely to include Python-based ML frameworks
-- **Features**:
-  - Real-time danger detection algorithms
-  - Location-based risk assessment
-  - Pattern recognition for suspicious activities
-  - Emergency response optimization
-
-### 🔧 backend-api/
-
-Houses the main backend API and server-side business logic:
-
-- **Purpose**: Manages data, user authentication, emergency services integration, and communication
-- **Technologies**: Express.js with TypeScript, RESTful APIs, database management, authentication services
-- **Features**:
-  - User management and authentication
-  - Emergency contact management
-  - Location tracking and geofencing
-  - Integration with emergency services
-  - Real-time communication and alerts
-
-### 📱 mobile-app/
-
-Contains the mobile application that end-users interact with:
-
-- **Purpose**: Provides the user interface for all safety features and emergency functions
-- **Technologies**: Expo (React Native framework)
-- **Features**:
-  - Emergency SOS button
-  - Location sharing with trusted contacts
-  - Safe route recommendations
-  - Community safety reporting
-  - Real-time alerts and notifications
-
 ## 🚀 Getting Started
 
 ### Prerequisites
